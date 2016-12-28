@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Detail | Inspiration</title>
+	<meta charset= "UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1">
+	<meta name="author" content="Larry Georges">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="{% static 'inspiration/style.css' %}" />
+</head>
+
+<body>
+
+	<nav>		
+		<ul>
+			<li class="active"><a href="http://127.0.0.1:8000/">Home</a></li>
+		</ul>
+	</nav>
+	
+	<br />
+	
+	<h1 class="header">Discover His Wisdom</h1>
+	
+	<div id="introduction">
+			<div class="contentDetail">
+					
+				<h1>{{ author_detail }}</h1>
+						
+				<img src="{{ author_pic_detail }}" alt={{ author_detail }} title={{ author_detail }}>
+							
+				<section>
+	
+					<div class="myQuotes">
+						<i>
+						
+						{{ author_full_text_detail }}
+							
+						</i>
+					</div>
+											
+				</section>
+				
+			</div>
+			
+		</div>
+		
+	<section id="aboutST">
+	
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<section id="aboutContent">
+		
+				<h1>About {{ author_detail }}</h1>
+				<p>
+					<p>{{ author_url_detail }}</p> 
+					<br />
+				</p>
+					<br />
+					<br />
+					<br />				
+					<br />
+					
+		</section>
+		
+	</section>
+	
+</body>
+
+</html>
+
+
+
